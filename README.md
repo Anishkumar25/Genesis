@@ -1,4 +1,4 @@
-# Genesis (జెనెసిస్ / जेनेसिस)
+# Genesis 
 
 > **A Mobile-First Web App Prototype for Women Connecting with Verified NGOs, Lawyers, and Financial Educators.**  
 > Designed for community leaders running women's awareness communities on Instagram. Built with a calm dawn aesthetic, high-speed mobile responsiveness, and a strict **Zero-PII** architecture.
