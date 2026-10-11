@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #FBF9F5;
+  --canvas-subtle: #F5F1E9;
+  --ink: #142426;
+  --ink-muted: #596667;
+  --dawn: #D97746;
+  --border: #ECE7E1;
+}
+
+/* Mobile-First Platform Layer (mobile-native skill) */
+html {
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--canvas);
+  color: var(--ink);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--canvas);
+  color: var(--ink);
+  min-height: 100dvh;
+  touch-action: manipulation;
+  overscroll-behavior-y: none;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hard rule from mobile-native: inputs must never auto-zoom on iOS */
+input,
+select,
+textarea,
+button {
+  font-size: 16px !important;
+}
+
+@media (min-width: 640px) {
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 14px !important;
+  }
+}
+
+/* Prevent text selection on actionable buttons */
+button,
+a {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Subtle transitions & animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Clean minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 36, 38, 0.15);
+  border-radius: 4px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Genesis | Daily Wellbeing & Rights",
+  "short_name": "Genesis",
+  "description": "A calm, verified space connecting women with legal clarity, safe shelter, and financial independence.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF9F5",
+  "theme_color": "#FBF9F5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
